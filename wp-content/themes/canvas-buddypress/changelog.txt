@@ -1,0 +1,70 @@
+*** Canvas BuddyPress Changelog ***
+
+2011.08.24 - version 0.17
+ * functions.php - Removed woo_nav_rss as it's already coming from Canvas.
+
+2011.08.17 - version 0.16
+ * functions.php - Require theme-functions file from Canvas, which is being overridden by theme-functions file in Canvas BuddyPress. We need both to be loaded.
+
+2011.07.25 - version 0.15
+ * style.css - Hide activity comment form by default (shown on clicking the "reply" link).
+ * /includes/theme-functions.php - Added filter for woo_breadcrumbs on BuddyPress pages.
+ * functions.php - Load theme-functions.
+ * /activity/index.php, 
+  /blogs/index.php, 
+  /blogs/create.php, 
+  /forums/index.php, 
+  /groups/index.php, 
+  /members/index.php, 
+  /members/single/plugins.php, 
+  /members/single/activity/permalink.php, 
+  /members/single/home.php, 
+  /registration/activate.php, 
+  /registration/register.php - Added missing woo_loop_before() and woo_loop_after() hooks.
+
+2011.07.18 - version 0.14
+ * /registration/activate.php - Fixed activation page markup
+ * style.css - Added styling for activation page
+
+2011.06.20 - version 0.13
+ * style.css - Fixed flickr widget float bug
+
+2011.06.03 - version 0.12
+ * sidebar.alt.php - Added file to display secondary sidebar if active.
+
+2011.04.29 - version 0.11
+ * style.css - Styled edit forum topic textarea
+
+2011.04.26 - version 0.10
+ * includes/widgets/widget-woo-bpforumtopics.php - Fixed Forum tags widget structure for non-forum pages
+
+2011.03.17 - version 0.09
+ * includes/widgets/widget-woo-bpforumtopics.php - Fixed Forum tags widget structure
+
+2011.03.02 - version 0.08
+ * style.css - "New forum topic" textarea height
+
+2011.02.28 - version 0.07
+ * /includes/widgets/widget-woo-bplogin.php - Dynamic BuddyPress login/user profile widget.
+ * /includes/widgets/widget-woo-bpforumtopics.php - Dynamic BuddyPress forum topic tags widget (displays on forum component only).
+ * sidebar.php - Removed static widgets code in favour of new dynamic widgets.
+ * functions.php - Added require() lines for new dynamic widgets.
+
+2011.02.24 - version 0.06
+ * style.css - Fixed member list line-height
+
+2011.02.17 - version 0.05
+ * lang/en_GB.po - added lang file
+ * functions.php - added load load_child_textdomain
+
+2011.02.17 - version 0.04
+ * functions.php - Added more functions from default BP theme to make Settings > Reading work
+
+2011.02.17 - version 0.03
+ * functions.php - fixed missing function and added function so that theme doesn't break if BP isn't installed
+
+2011.02.16 - version 0.02
+ * style.css - Adjusted error message margin
+	
+2011.02.06 - version 0.01
+ * First beta release!
