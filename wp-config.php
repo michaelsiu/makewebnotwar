@@ -26,13 +26,13 @@ define('DB_HOST', 'localhost');*/
 define('DB_USER', 'b295931b7fdac634');
 define('DB_PASSWORD', '7^.v]!uMpeV!');
 define('DB_HOST', 'localhost');*/
-define('DB_NAME', 'mwnwaqziybgzqsed');
+define('DB_NAME', 'mwnw');
 /** MySQL database username */
 //define('DB_USER', 'b295931b7fdac634');
-define('DB_USER', 'root');
+define('DB_USER', 'mwnw');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ideanotion');
+define('DB_PASSWORD', 'mwnw');
 define('DB_HOST', 'localhost');
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -40,8 +40,8 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define('WP_SITEURL', 'http://localhost:52845/');
-define('WP_HOME', 'http://localhost:52845/');
+// define('WP_SITEURL', 'http://localhost:52845/');
+// define('WP_HOME', 'http://localhost:52845/');
 //define('WP_SITEURL', 'http://www.webnotwar.ca');
 //define('WP_HOME', 'http://www.webnotwar.ca');
 
