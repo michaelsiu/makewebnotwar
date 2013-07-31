@@ -1,0 +1,122 @@
+#mainNav {
+  display: block;
+  width: 100%;
+  padding: 0px 0px;
+  font-family: "futura-pt",sans-serif;
+  z-index: 100;
+  color: $white;
+  background: $orange;
+  text-align: center;
+  
+  .menu {
+    list-style: none;
+    margin: 0px;
+    li {
+      display:inline-block;
+    }
+    a {
+      color: $white;
+      font-size: 12pt;
+      padding: 10px 20px;
+      display: block;
+      outline: 0;
+      transition: all 0.3s ease !important;
+    }
+    a:hover {
+      cursor: pointer;
+      background-color: rgba(0,0,0,0.4);
+    }
+    a.current-menu-item {
+        background-color: #fff;
+        color: $black;
+    }
+  }
+}
+
+#logo {
+  width: 100px;
+  float: left;
+  background: #33485f;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+#moreMenu {
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: $white;
+  color: #000;
+  overflow: hidden;
+  -webkit-transition: height 0.8s ease;  
+  -moz-transition: height 0.8s ease;  
+  -o-transition: height 0.8s ease;  
+  -ms-transition: height 0.8s ease;  
+  transition: height 0.8s ease;
+  text-align: left;
+  height: auto;
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+    color:#000;
+    text-shadow: none;
+  }
+  ul{
+    margin: 30px 0px;
+  }
+  li {
+    display: block !important;
+    float: none;
+    a {
+      transition: all 0.3s ease !important;
+    }
+    a:hover{
+      color: $green;
+    }
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+.close {
+  height: 0px !important;
+}
+
+.menuMore {
+  background: $white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: inline-block;
+  span {
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url('../images/menu.png') top right no-repeat;
+    background-size: cover;
+    width: 12pt;
+    height: 12pt; 
+  }
+  a {
+    color: #333 !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  a:hover {
+    background: $white !important;
+  }
+}
+
+.test {
+  background: $orange;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

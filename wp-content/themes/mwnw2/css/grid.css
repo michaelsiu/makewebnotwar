@@ -1,0 +1,88 @@
+div {
+  vertical-align: top;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+.container960 {
+  width: 960px;
+  margin: 0px auto;
+  padding: 0px; }
+
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+  display: inline-block;
+  float: left;
+  padding: 0px 2%; }
+
+.span1 {
+  width: 8.333%; }
+
+.span2 {
+  width: 16.666%; }
+
+.span3 {
+  width: 24.999%; }
+
+.span4 {
+  width: 33.333%; }
+
+.span5 {
+  width: 41.666%; }
+
+.span6 {
+  width: 49.999%; }
+
+.span7 {
+  width: 58.333%; }
+
+.span8 {
+  width: 66.666%; }
+
+.span9 {
+  width: 74.999%; }
+
+.span10 {
+  width: 83.333%; }
+
+.span11 {
+  width: 91.666%; }
+
+.span12 {
+  width: 99.999%; }
+
+.offset1 {
+  margin-left: 8.333%; }
+
+.offset2 {
+  margin-left: 16.666%; }
+
+.offset3 {
+  margin-left: 24.999%; }
+
+.offset4 {
+  margin-left: 33.333%; }
+
+.offset5 {
+  margin-left: 41.666%; }
+
+.offset6 {
+  margin-left: 49.999%; }
+
+.offset7 {
+  margin-left: 58.333%; }
+
+.offset8 {
+  margin-left: 66.666%; }
+
+.offset9 {
+  margin-left: 74.999%; }
+
+.offset10 {
+  margin-left: 83.333%; }
+
+.offset11 {
+  margin-left: 91.666%; }

@@ -1,0 +1,43 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "ff-tisa-web-pro",serif;
+  line-height: 1.8em;
+  background: $white;
+  /*background-color: #75b0e0;*/
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+  text-transform: uppercase;
+  /*font-family: "ff-cocon-web-pro",sans-serif;*/
+  font-family: "futura-pt",sans-serif;
+}
+
+div {
+  vertical-align: top;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px !important;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  outline: 0;
+}
+
+strong {
+  color: #2e3640;
+}

@@ -1,0 +1,118 @@
+#tutorials {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.tutorial {
+  vertical-align: top;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  overflow:hidden;
+  margin: 0 1%;
+  margin-bottom: 50px;
+  display: inline-block;
+  h3 {
+    color: #333;
+  }
+  li {
+    display: block;
+    overflow: hidden;
+    margin: 0 1em;
+    margin-top: 1em;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  li:last-child {
+    border: none;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+    a {
+      font-size: 1.5em;
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.ruby {
+  li:last-child{
+    background-color: #d82728;
+  }
+}
+.javascript {
+  li:last-child{
+    background: #fec709;
+  }
+}  
+
+.title {
+  width: 100%;
+  background: #2e3640;
+  padding: 15px;
+  margin-bottom: 10px;
+  h2 {
+    color: #fff;
+    font-size: 1.5em !important;
+    margin: 0px !important; 
+    .dropDown, .dropUp {
+      display: block;
+      float: right;
+      width: 20px;
+      height: 20px;
+      background-size: cover; 
+      cursor: pointer;
+    }
+    .dropUp:hover {
+      margin-top: -5px;
+      height: 25px;
+    }
+    .dropDown:hover {
+      margin-bottom: -5px;
+      height: 25px;
+    }
+    .dropDown {
+      background: url("../images/dropDown.png") center center no-repeat;
+      background-size: cover; 
+    }
+    .dropUp {
+      background: url("../images/dropUp.png") center center no-repeat;
+      background-size: cover; 
+    }
+  }  
+}
+
+.previewImage {
+  float: left;
+  width: 24%;
+  border: 3px solid #ccc;
+  margin: 0 3%;
+  border-radius: 300px;
+  overflow: hidden;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+}
+.excerpt {
+  padding: 0;
+  padding-right: 3%;
+  width: 70%;
+  float: right;
+  p {
+    margin: 0px;
+    margin-bottom: 3%;
+  }
+  h3 {
+    font-size: 1.5em !important;
+  }
+  img {
+    width: 100% !important;
+    height: auto;
+    margin-bottom: 2em;
+  }
+}  

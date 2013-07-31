@@ -1,0 +1,159 @@
+.topBanner {
+  display: block;
+  // background: url('../images/clouds.png') top center no-repeat;
+  // background-size: cover;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: $orange;
+  padding: 80px 0px;
+  overflow: hidden;
+  margin: 0px auto;
+  margin-top: -46px;
+  height: 100%;
+  img {
+    vertical-align: top;
+    margin-bottom: 40px;
+    width: 150px;
+    height: auto;
+  }
+  .featured {
+    text-align: center;
+    img {
+      margin-bottom: 0px;
+      width: 300px;
+      height: auto;  
+    }
+  }
+  h1, h2 {
+    color: $white;
+    text-align: left;
+  }
+  h1 {
+    margin: 0px;
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .block {
+    border-radius: 5px;
+    background: rgba(255,255,255,0.2);
+    padding: 2%;
+    width: 31%;
+    margin: 20px 1%;
+    display: inline-block;
+    // box-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+    h3 {
+      font-size: 1.5em;
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .latest {
+    border-radius: 5px;
+    padding: 20px 20px;
+    background: $orange;
+    color: $white;
+    h3 {
+      margin-top: 0px;
+      color: $white;
+    }
+    .date {
+      float: right;
+    }
+  }
+  #floatMore {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    a {
+      font-size: 1.5em;
+      color: $white;
+    }
+    img {
+      margin-top: 1em;
+      width: 20px;
+    }
+  }
+}
+
+#content {
+  margin-top: 80px;
+  h1 {
+    margin-bottom: 1em;
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  h3 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  h4 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+}
+
+ul.slider {
+  float: right;
+}
+
+ul.slider li {
+  margin: 5px;
+  border-radius: 30px;
+  background-color: $white;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+ul.slider li.currentSlide {
+  margin-bottom: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.icons {
+  margin: 80px 0px;
+}
+
+.icons h4 {
+  font-size: .95em;
+}
+
+.icons p {
+  font-size: .8em;
+}
+
+.icons img {
+  width: 100px;
+  height: auto;
+}
+
+.ctaArea {
+  padding: 40px 10px;;
+  overflow: hidden;
+  background: #fff;
+}
+
+.ctaArea p {
+  margin: 0px;
+}
+
+input {
+  border: none;
+}
