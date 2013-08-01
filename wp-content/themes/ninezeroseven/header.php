@@ -74,7 +74,7 @@
             <div style="margin-top: 4px" class="lang-fr"><a href="http://localhost:52845/fr/" hreflang="fr" title="French" class="qtrans_flag qtrans_flag_fr"><span style="display:none">French</span></a></div>
         </div>-->
         <div style="float: right;top: 33px;position: relative;margin-left: 7px;">
-        <?php echo qtrans_generateLanguageSelectCode('image'); ?>
+        <?php echo qtrans_generateLanguageSelectCode('text'); ?>
         </div>
 		<nav class="mainMenu">
 			<?php wp_nav_menu( array( 'container' => '','menu_id'=> 'main-menu', 'theme_location' => 'primary','fallback_cb'=> '') );?>
@@ -88,7 +88,7 @@
 
 	</div> <!-- ./container -->
 </section> <!-- ./topBar -->
-
+<script>jQuery(document).ready(function(){ jQuery('.lang-en a span').html('EN'); jQuery('.lang-fr a span').html('FR'); })</script>
 <!-- ENDS TOP BAR -->
 
 <?php

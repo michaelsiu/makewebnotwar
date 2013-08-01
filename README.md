@@ -1,4 +1,0 @@
-makewebnotwar
-=============
-
-webnotwar.com

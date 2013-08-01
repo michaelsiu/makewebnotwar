@@ -17,31 +17,29 @@
 //Database=mwnwAqZIyBGzqseD;Data Source=us-cdbr-azure-east-c.cloudapp.net;User Id=b295931b7fdac6;Password=60368fcb
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-/*define('DB_NAME', 'mwnwAqZIyBGzqseD342');
-define('DB_USER', 'b295931b7fdac634');
-define('DB_PASSWORD', '7^.v]!uMpeV!');
-define('DB_HOST', 'localhost');*/
+/*define('DB_NAME', 'mwnwAqZIyBGzqseD');
+define('DB_USER', 'b295931b7fdac6');
+define('DB_PASSWORD', '60368fcb');
+define('DB_HOST', 'us-cdbr-azure-east-c.cloudapp.net');*/
 //new db
-/*define('DB_NAME', 'mwnwAqZIyBGzqseD342');
-define('DB_USER', 'b295931b7fdac634');
-define('DB_PASSWORD', '7^.v]!uMpeV!');
-define('DB_HOST', 'localhost');*/
+/*define('DB_NAME', 'mwnwAqZIyBGzqseD');
+define('DB_USER', 'b295931b7fdac6');
+define('DB_PASSWORD', '60368fcb');
+define('DB_HOST', 'us-cdbr-azure-east-c.cloudapp.net');*/
 define('DB_NAME', 'mwnwaqziybgzqsed');
-/** MySQL database username */
-//define('DB_USER', 'b295931b7fdac634');
 define('DB_USER', 'root');
-
-/** MySQL database password */
-define('DB_PASSWORD', 'ideanotion');
-define('DB_HOST', 'localhost');
+define('DB_PASSWORD', 'iloveweb');
+define('DB_HOST', 'localhost');/*define('DB_USER', 'dbadmin');
+define('DB_PASSWORD', 'Crossbone$8');
+define('DB_HOST', 'pagemii.com');*/
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define('WP_SITEURL', 'http://localhost:52845/');
-define('WP_HOME', 'http://localhost:52845/');
+define('WP_SITEURL', 'http://mwnw.cloudapp.net');
+define('WP_HOME', 'http://mwnw.cloudapp.net');
 //define('WP_SITEURL', 'http://www.webnotwar.ca');
 //define('WP_HOME', 'http://www.webnotwar.ca');
 
