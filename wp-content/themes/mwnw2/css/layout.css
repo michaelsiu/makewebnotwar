@@ -305,9 +305,7 @@ input {
   padding: 100px 0px; }
   #community header h1 {
     font-size: 4em;
-    color: #0065a6;
-    margin: 0px;
-    padding-bottom: 1em; }
+    color: #0065a6; }
 
 #community .events {
   padding: 100px 0px; }
@@ -446,8 +444,18 @@ article {
   #author .circleImage {
     margin: 0px auto; }
 
+#about {
+  text-align: center; }
+
 #about header {
+  background: #fff;
   padding: 100px 0px; }
+  #about header h1 {
+    font-size: 4em; }
+
+#about .contact {
+  padding: 100px 0px;
+  background: #cdf2ff; }
 
 footer {
   text-align: center;
