@@ -32,20 +32,12 @@ function create_event_post_type() {
     'capability_type' => 'post', 
     'hierarchical' => false, 
     'menu_position' => 5, 
+    'taxonomies' => array('category'),
     'supports' => array('title', 'thumbnail')
   ); 
 
   // this function registers and actually creates the custom post type
   register_post_type('pandc_event', $args);
-}
-
-function pandc_events(){
-  $args = array(
-    'post_type' => 'pandc_event',
-    'posts_per_page' => -1
-  );
-  $query = new WP_Query($args);
-  return $query;
 }
 
 function event_info(){
@@ -60,10 +52,78 @@ function event_info(){
     if(!array_key_exists("paid", $values)){
       $values["paid"] = "Free";
     }
+    
+    $values["formatted_address"] = formatted_address($values);
+
+    $values["query_address"] = query_address($values);
 
     return $values;
   }
   return false;
+}
+
+function formatted_address($values) {
+  $formatted_address = "";
+  
+  if($values["location_name"]) {
+    $formatted_address .= $values["location_name"] . "<br/>";
+  }
+
+  if($values["address1"]) {
+    $formatted_address .= $values["address1"] . "<br/>";
+  }
+
+  if($values["address2"]) {
+    $formatted_address .= $values["address2"] . "<br/>";
+  }
+
+  if($values["address3"]) {
+    $formatted_address .= $values["address3"] . "<br/>";
+  }
+
+  if(($values["city"]) && ($values["province"])) {
+    $formatted_address .= $values["city"] . ", " . $values["province"];
+
+  } else if ($values["city"]) {
+      $formatted_address .= $values["city"];
+
+  } else if ($values["province"]) {
+      $formatted_address .= $values["province"];
+  }
+
+  return $formatted_address;
+}
+
+function query_address($values) {
+  $query_address = "";
+
+  foreach($values as $key => $value) {
+    $values[$key] = str_replace(" ", "+", $value);
+  }
+
+  if($values["address1"]) {
+    $query_address .= $values["address1"];
+  }
+
+  if($values["address2"]) {
+    $query_address .= "+" . $values["address2"];
+  }
+
+  if($values["address3"]) {
+    $query_address .= "+" . $values["address3"];
+  }
+
+  if(($values["city"]) && ($values["province"])) {
+    $query_address .= "+" . $values["city"] . "+" . $values["province"];
+
+  } else if ($values["city"]) {
+      $query_address .= "+" . $values["city"];
+
+  } else if ($values["province"]) {
+      $query_address .= "+" . $values["province"];
+  }
+
+  return $query_address; 
 }
 
 $pandc_metaboxes['pandc_event'] = array(
@@ -88,9 +148,29 @@ $pandc_metaboxes['pandc_event'] = array(
         'default' => ''
       ),
       array(
-        'name' => 'Location:',
-        'desc' => 'e.g. People And Code, 26 Soho Street Unit 350, Toronto, Ontario, CANADA, M5T 1A8',
-        'id' => 'pandc_event_location',
+        'name' => 'Location Name:',
+        'desc' => 'e.g. People And Code',
+        'id' => 'pandc_event_location_name',
+        'type' => 'text',
+        'default' => ''
+      ),
+      array(
+        'name' => 'Street Number and Name:',
+        'desc' => 'e.g. 26 Soho Street',
+        'id' => 'pandc_event_address1',
+        'type' => 'text',
+        'default' => ''
+      ),
+      array(
+        'name' => 'Address Line 2:',
+        'desc' => 'e.g. Unit 350',
+        'id' => 'pandc_event_address2',
+        'type' => 'text',
+        'default' => ''
+      ),
+      array(
+        'name' => 'Address Line 3:',
+        'id' => 'pandc_event_address3',
         'type' => 'text',
         'default' => ''
       ),
@@ -98,8 +178,13 @@ $pandc_metaboxes['pandc_event'] = array(
         'name'    => 'City:',
         'desc'    => 'e.g. Toronto',
         'id'      => 'pandc_event_city',
-        'type'    => 'text',
-        'default' => ''
+        'type'    => 'text'
+      ),
+      array(
+        'name'    => 'Province:',
+        'desc'    => 'e.g. Ontario',
+        'id'      => 'pandc_event_province',
+        'type'    => 'text'
       ),
       array(
         'name' => 'Type:',

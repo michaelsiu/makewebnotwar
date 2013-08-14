@@ -36,6 +36,8 @@
       <?php 
         $args = array(
           'post_type' => 'pandc_event',
+          'orderby' => 'meta_value',
+          'meta_key' => 'pandc_event_approved', 
           'posts_per_page' => -1
         );
         $query = new WP_Query($args);
@@ -51,7 +53,7 @@
             <th>Type</th>
             <th></th>
             <th>Date</th>
-            <th>Map</th>
+            <th>More info</th>
           </tr>
         </thead>
         <tbody>
@@ -62,19 +64,45 @@
               if($event_info["approved"]):
           ?>
             <tr>
-              <td><?php echo $event_info["name"]; ?></td>
-              <td><?php echo $event_info["location"]; ?></td>
-              <td><?php echo $event_info["city"]; ?></td>
-              <td><?php echo $event_info["topic"]; ?></td>
-              <td><?php echo $event_info["type"]; ?></td>
-              <td><span class='label <?php echo($event_info["paid"] === "Paid") ? "secondary" : ""; ?>'><?php echo $event_info["paid"]; ?></span></td>
-              <td><?php echo $event_info["date"]; ?></td>
-              <td><a href="<?php echo $event_info["url"]; ?>">Link</a></td>
+              <td>
+                <a href="<?php echo $event_info["url"]; ?>" target="blank">
+                  <?php echo $event_info["name"]; ?>
+                </a>
+              </td>
+              <td>
+                <a href="http://maps.bing.com/?q=<?php echo $event_info['query_address']; ?>" alt="<?php echo $event_info['location_name']; ?>" target="blank">
+                  <?php echo $event_info["formatted_address"]; ?>
+                </a>
+              </td>
+              <td>
+                <?php echo $event_info["city"]; ?>
+              </td>
+              <td>
+                <?php echo $event_info["topic"]; ?>
+              </td>
+              <td>
+                <?php echo $event_info["type"]; ?>
+              </td>
+              <td>
+                <span class='label <?php echo($event_info["paid"] === "Paid") ? "secondary" : ""; ?>'>
+                  <?php echo $event_info["paid"]; ?>
+                </span>
+              </td>
+              <td>
+                <?php echo $event_info["date"]; ?>
+              </td>
+              <td>
+                <a href="<?php echo $event_info["url"]; ?>" target="blank">
+                  Link
+                </a>
+              </td>
             </tr>
             <?php endif; ?>
           <?php endwhile; ?>
         </tbody>
       </table>
+      <?php else: ?>
+        <p>There currently are no events.</p>
       <?php endif; ?>
     </div>
   </div>

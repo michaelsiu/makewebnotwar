@@ -18,33 +18,35 @@
     <div id="moreMenu" class="open">
       <div class="row">
         <div class="large-3 columns test">
-          <img src="<?php bloginfo('template_url'); ?>/images/mwnw-logo.png">
+          <a href="<?php bloginfo('url'); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/images/mwnw-logo.png">
+          </a>
         </div>
         <div class="large-9 columns">
           <ul class="large-3 columns">
             <li>
-              <h3>Learning</h3>
+              <h3><a href="<?php bloginfo('url'); ?>/learning">Learning</a></h3>
               <ul>
-                <li><a href="tutorials.php">Tutorials</a></li>
-                <li><a href="#">Open Data</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Glossary</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/tutorials">Tutorials</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/opendata">Open Data</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/glossary">Glossary</a></li>
               </ul>
             </li>
           </ul>
           <ul class="large-3 columns">
-            <h3>Community</h3>
+            <h3><a href="<?php bloginfo('url'); ?>/community">Community</a></h3>
             <ul>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Partners</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/events">Events</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/partners" >Partners</a></li>
             </ul>
           </ul>
           <ul class="large-3 columns">
             <h3>About</h3>
             <ul>
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/mission">Mission</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/news">News</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
             </ul>
           </ul>
           <ul class="large-3 columns">
@@ -68,10 +70,10 @@
       </div>
     </div>
     <ul class="menu">
-      <li><a href="<?php bloginfo('ur'); ?>" class="current-menu-item">Home</a></li>
-      <li><a href="tutorials.php">Learning</a></li>
-      <li><a href="<?php bloginfo('url'); ?>/events">Community</a></li>
-      <li><a href="#">About</a></li>
-      <li class="menuMore"><a href="#">More<span></span></a></li>
+      <li><a href="<?php bloginfo('url'); ?>" class="current-menu-item">Home</a></li>
+      <li><a href="<?php bloginfo('url'); ?>/learning">Learning</a></li>
+      <li><a href="<?php bloginfo('url'); ?>/community">Community</a></li>
+      <li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
+      <li class="menuMore"><a href="">More<span></span></a></li>
     </ul>
   </nav>
