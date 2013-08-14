@@ -33,13 +33,25 @@
           <div class="large-4 columns">
               <div class="panel">
                 <h3>Latest News</h3>
+                <?php 
+                  $args = array(
+                    'posts_per_page' => -1
+                  );
+                  $query = new WP_Query( $args );
+                  if($query->have_posts()):
+                ?>
                 <ul>
-                  <li>Ipsum Lorem</li>
-                  <li>Ipsum Lorem</li>
-                  <li>Ipsum Lorem</li>
-                  <li>Ipsum Lorem</li>
-                  <li>Ipsum Lorem</li>
+                  <?php
+                      while($query->have_posts()): $query->the_post();
+                  ?>
+                  <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                  <?php
+                    endwhile;
+                  ?>
                 </ul>
+                <?php
+                    endif;
+                  ?>
               </div>
           </div>
           <div class="large-8 columns">

@@ -299,6 +299,10 @@ input {
 
 #community {
   text-align: center; }
+  #community .events h2 a {
+    color: #3d899d; }
+  #community .events h2 a:hover {
+    color: #0065a6; }
 
 #community header {
   background: #fff;

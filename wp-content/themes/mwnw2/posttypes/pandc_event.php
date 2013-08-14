@@ -1,10 +1,6 @@
 <?php
-
 // initialize the custom post type
 add_action( 'init', 'create_event_post_type', 0 );
-// add custom meta boxes
-add_action( 'add_meta_boxes', 'call_PAndCMetaboxes_add');  
-add_action('save_post', 'call_PAndCMetaboxes_update');
 
 function create_event_post_type() {
   // The various labels and button text for the custom post type
@@ -226,9 +222,5 @@ $pandc_metaboxes['pandc_event'] = array(
     )
   )
 );
-
-// the $meta_box array for each new custom post type created in this plugin.  Multi dimentional array - first level is the meta_box - second level is the custom field.
-
-
 
 ?>

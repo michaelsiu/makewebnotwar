@@ -1,5 +1,15 @@
 #community {
   text-align: center;
+  .events {
+    h2 {
+      a {
+        color: $lightteal;
+      }
+      a:hover {
+        color: $blue;
+      }
+    }
+  }
 }
 
 #community header {

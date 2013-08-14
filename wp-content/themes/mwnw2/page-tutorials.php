@@ -8,6 +8,10 @@
   </nav>
   <div id="learning">
     <div class="row">
+      <?php 
+        $tutorials = pandc_tutorials();
+        if($tutorials->have_posts()):
+      ?>
       <div class="large-8 columns">
         <h1>Tutorials</h1>
         <table>
@@ -19,33 +23,25 @@
             </tr>
           </thead>
           <tbody>
+      <?php
+        while($tutorials->have_posts()): $tutorials->the_post();
+          $tutorial_info = tutorial_info();
+          if($tutorial_info["approved"]):
+      ?>
             <tr>
-              <td><a href="tutorials.php">Title Goes Here Someday</a></td>
-              <td>This is longer content Donec id elit non mi porta gravida at eget metus...</td>
-              <td>Javascript, Ruby, Linux</td>
+              <td><a href="<?php the_permalink();?>"><?php the_title(); ?></a></td>
+              <td><?php the_excerpt(); ?></td>
+              <td><?php the_tags(" ", ", ", ""); ?></td>
             </tr>
-            <tr>
-              <td><a href="tutorials.php">Title Goes Here Someday</a></td>
-              <td>This is longer content Donec id elit non mi porta gravida at eget metus...</td>
-              <td>Javascript, Ruby, Linux</td>
-            </tr>
-            <tr>
-              <td><a href="tutorials.php">Title Goes Here Someday</a></td>
-              <td>This is longer content Donec id elit non mi porta gravida at eget metus...</td>
-              <td>Javascript, Ruby, Linux</td>
-            </tr>
-            <tr>
-              <td><a href="tutorials.php">Title Goes Here Someday</a></td>
-              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus...</td>
-              <td>Javascript, Ruby, Linux</td>
-            </tr>
-            <tr>
-              <td><a href="tutorials.php">Title Goes Here Someday</a></td>
-              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus...</td>
-              <td>Javascript, Ruby, Linux</td>
-            </tr>
+      <?php 
+          endif;
+        endwhile;
+      ?>
           </tbody>
         </table>
+      <?php
+        endif;
+      ?>
       </div>
       <div class="large-4 columns">
         <div class="panel">

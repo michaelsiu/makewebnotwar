@@ -5,19 +5,15 @@ if(!class_exists('PCMetaboxes')){
   include_once(dirname(__FILE__).'/../libs/pandc_metaboxes.php');
 }
 
+$pandc_metaboxes;
+$metaboxes = new PAndCMetaboxes();
+
+add_action( 'add_meta_boxes', array($metaboxes, 'metaboxes_add'));  
+add_action('save_post', array($metaboxes, 'metaboxes_update'));
+
 // load custom post types
-include_once('pandc_event.php');
 include_once('pandc_tutorial.php');
-
-
-function call_PAndCMetaboxes_add(){
-  $metaboxes = new PAndCMetaboxes();
-  $metaboxes->metaboxes_add();
-}
-
-function call_PAndCMetaboxes_update($post_id){
-  $metaboxes = new PAndCMetaboxes();
-  $metaboxes->metaboxes_update($post_id);
-}
+include_once('pandc_event.php');
+include_once('pandc_glossary.php');
 
 ?>

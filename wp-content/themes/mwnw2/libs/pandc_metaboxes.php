@@ -4,9 +4,9 @@ class PAndCMetaboxes {
 
   function metaboxes_add(){
       global $pandc_metaboxes;
-      $i = 0;
 
       foreach($pandc_metaboxes as $post_type => $box) {
+          $i = 0;
           foreach($box as $key => $value){
               $args = array('box_num' => $i);
               add_meta_box($value['id'], $value['title'],array( &$this, 'format_custom_fields'), $post_type, $value['context'], $value['priority'], $args);  

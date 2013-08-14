@@ -1,10 +1,6 @@
 <?php
-
 // initialize the custom post type
 add_action( 'init', 'create_tutorial_post_type', 0 );
-// add custom meta boxes
-add_action( 'add_meta_boxes', 'call_PAndCMetaboxes_add');  
-add_action('save_post', 'call_PAndCMetaboxes_update');
 
 function create_tutorial_post_type() {
   // The various labels and button text for the custom post type
@@ -31,8 +27,9 @@ function create_tutorial_post_type() {
     'rewrite' => array('slug' => 'tutorial', 'with_front' => false),
     'capability_type' => 'post', 
     'hierarchical' => false, 
+    'taxonomies' => array('post_tag'),
     'menu_position' => 5, 
-    'supports' => array('title', 'thumbnail')
+    'supports' => array('title', 'thumbnail', 'editor')
   ); 
 
   // this function registers and actually creates the custom post type
@@ -81,69 +78,14 @@ $pandc_metaboxes['pandc_tutorial'] = array(
         'default' => '0'
       ),
       array(
-        'name' => 'Name:',
+        'name' => 'Another Check',
         'desc' => 'e.g. August Ember.js Meetup',
-        'id' => 'pandc_tutorial_name',
-        'type' => 'text',
-        'default' => ''
-      ),
-      array(
-        'name' => 'Location:',
-        'desc' => 'e.g. People And Code, 26 Soho Street Unit 350, Toronto, Ontario, CANADA, M5T 1A8',
-        'id' => 'pandc_tutorial_location',
-        'type' => 'text',
-        'default' => ''
-      ),
-      array(
-        'name'    => 'City:',
-        'desc'    => 'e.g. Toronto',
-        'id'      => 'pandc_tutorial_city',
-        'type'    => 'text',
-        'default' => ''
-      ),
-      array(
-        'name' => 'Type:',
-        'desc' => 'e.g. Meetup/Workshop/Social etc.',
-        'id' => 'pandc_tutorial_type',
-        'type' => 'text',
-        'default' => 'Meetup'
-      ),
-      array(
-        'name' => 'Tutorial Date:',
-        'desc' => 'eg. Aug 20th, 2013 @7:30pm',
-        'id' => 'pandc_tutorial_date',
-        'type' => 'text',
-        'default' => ''
-      ),
-      array(
-        'name' => 'Paid Tutorial?',
-        'desc' => 'Is this a paid tutorial?',
-        'id' => 'pandc_tutorial_paid',
-        'type' => 'radio',
-        'options' => array(
-          array(
-            'name' => 'Paid',
-            'value' => 'Paid'
-          ),
-          array(
-            'name' => 'Free',
-            'value' => 'Free'
-          ),
-        )
-      ),
-      array(
-        'name' => 'Tutorial URL:',
-        'desc' => 'e.g. http://www.meetup.com/Mobile-Startups-TO/tutorials/104501262/',
-        'id' => 'pandc_tutorial_url',
-        'type' => 'text',
-        'default' => ''
+        'id' => 'pandc_tutorial_check',
+        'type' => 'checkbox',
+        'default' => '0'
       )
     )
   )
 );
-
-// the $meta_box array for each new custom post type created in this plugin.  Multi dimentional array - first level is the meta_box - second level is the custom field.
-
-
 
 ?>
