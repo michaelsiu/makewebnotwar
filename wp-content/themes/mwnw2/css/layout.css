@@ -298,7 +298,19 @@ input {
   z-index: 50; }
 
 #community {
-  padding: 80px; }
+  text-align: center; }
+
+#community header {
+  background: #fff;
+  padding: 100px 0px; }
+  #community header h1 {
+    font-size: 4em;
+    color: #0065a6;
+    margin: 0px;
+    padding-bottom: 1em; }
+
+#community .events {
+  padding: 100px 0px; }
 
 h2.month {
   text-align: center; }
@@ -414,8 +426,10 @@ article {
   display: inline-block;
   padding-bottom: 50px; }
 
-#tutorial {
+#learning {
   padding: 80px 0px; }
+  #learning h2 a {
+    color: #30b0d1; }
 
 #subNav ul {
   background: #fff;
@@ -432,13 +446,21 @@ article {
   #author .circleImage {
     margin: 0px auto; }
 
+#about header {
+  padding: 100px 0px; }
+
 footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  text-align: center;
+  padding: 100px 0px;
   color: #eeeeee;
   background: #2d3538;
   min-height: 200px;
   width: 100%; }
+
+footer .partners img {
+  padding: 10%;
+  width: 100%;
+  height: auto; }
 
 footer h3 {
   color: #eeeeee; }

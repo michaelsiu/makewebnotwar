@@ -25,7 +25,7 @@
         <div class="large-9 columns">
           <ul class="large-3 columns">
             <li>
-              <h3><a href="<?php bloginfo('url'); ?>/learning">Learning</a></h3>
+              <h3><a href="<?php bloginfo('url'); ?>/learn">Learn</a></h3>
               <ul>
                 <li><a href="<?php bloginfo('url'); ?>/tutorials">Tutorials</a></li>
                 <li><a href="<?php bloginfo('url'); ?>/opendata">Open Data</a></li>
@@ -71,7 +71,7 @@
     </div>
     <ul class="menu">
       <li><a href="<?php bloginfo('url'); ?>" class="current-menu-item">Home</a></li>
-      <li><a href="<?php bloginfo('url'); ?>/learning">Learning</a></li>
+      <li><a href="<?php bloginfo('url'); ?>/learn">Learn</a></li>
       <li><a href="<?php bloginfo('url'); ?>/community">Community</a></li>
       <li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
       <li class="menuMore"><a href="">More<span></span></a></li>

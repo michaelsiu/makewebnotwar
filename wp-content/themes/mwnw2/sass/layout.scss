@@ -1,3 +1,4 @@
+// Colours
 $white: #eee;
 $black: #2d3538;
 $darkgrey: #2d3538;
@@ -10,6 +11,9 @@ $teal: #066c86;
 $lightteal: #3d899d;
 $purple: #442145;
 
+// Sizes
+$section_padding: 100px 0px;
+
 @import "master.scss";
 @import "nav.scss";
 @import "index.scss";
@@ -18,4 +22,5 @@ $purple: #442145;
 @import "tutorials.scss";
 @import "single.scss";
 @import "tutorial.scss";
+@import "about.scss";
 @import "footer.scss";

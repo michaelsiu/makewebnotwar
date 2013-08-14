@@ -1,20 +1,20 @@
   <footer>
     <div class="row">
-      <div class="large-5 columns">
-        <h3>Make Web Not War is...</h3>
-        <p>ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+      <div class="large-12 columns">
+        <h3>Brought to you by</h3>
       </div>
-      <div class="large-7 columns">
-        <h3>Latest Article</h3>
-        <p>ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="row partners">
+      <div class="large-4 columns">
+        <p>
+          <img src="<?php bloginfo('template_url'); ?>/images/microsoft-logo.png" alt="Microsoft">
+        </p>
+      </div>
+      <div class="large-4 columns">
+        <img src="<?php bloginfo('template_url'); ?>/images/peopleandcode-logo.png" alt="People &amp; Code">
+      </div>
+      <div class="large-4 columns">
+                <img src="<?php bloginfo('template_url'); ?>/images/ideanotion-logo.png" alt="Idea Notion">
       </div>
     </div>
   </footer>

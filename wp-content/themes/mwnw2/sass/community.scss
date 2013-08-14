@@ -1,5 +1,20 @@
 #community {
-  padding: 80px;
+  text-align: center;
+}
+
+#community header {
+  background: #fff;
+  padding: $section_padding;
+  h1 {
+    font-size: 4em;
+    color: $blue;
+    margin: 0px;
+    padding-bottom: 1em;
+  }
+}
+
+#community .events {
+  padding: $section_padding;
 }
 
 h2.month {

@@ -6,7 +6,7 @@
           <li>Resources</li>
       </ul>
   </nav>
-  <div id="tutorials">
+  <div id="learning">
     <div class="row">
       <div class="large-8 columns">
         <h1>Tutorials</h1>
