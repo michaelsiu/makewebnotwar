@@ -41,3 +41,23 @@ a {
 strong {
   color: #2e3640;
 }
+
+.panel.callout, .button {
+  border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+.button.success {
+  background-color: $green;
+}
+
+.button.success:hover {
+  background: $lightgreen;
+}
+
+.mwnw {
+  background-color: #f8955b;
+  padding:10px;
+}

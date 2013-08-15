@@ -1,15 +1,5 @@
 #community {
   text-align: center;
-  .events {
-    h2 {
-      a {
-        color: $lightteal;
-      }
-      a:hover {
-        color: $blue;
-      }
-    }
-  }
 }
 
 #community header {
@@ -17,7 +7,6 @@
   padding: $section_padding;
   h1 {
     font-size: 4em;
-    color: $blue;
   }
 }
 

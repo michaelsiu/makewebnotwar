@@ -2,6 +2,16 @@
   background: #fdc60b;
 }
 
+.author {
+  text-align: center;
+  a {
+    color: $green;
+  }
+  a:hover {
+    color: $lightgreen;
+  }
+}
+
 article {
   position: relative;
   background: #fff;

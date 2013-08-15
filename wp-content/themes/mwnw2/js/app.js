@@ -48,4 +48,19 @@
     }
   });
 
+  $(document).foundation();
+  $(document).ready(function(){
+    var x = false;
+    setInterval(function(){
+      if(x){
+        $('.topBanner').css('background-color', '#f78a51');
+        x = false;
+      } else {
+        $('.topBanner').css('background-color', '#442145');
+        x = true;
+      }
+    }, 5000);
+  });
+
+
 })(jQuery);

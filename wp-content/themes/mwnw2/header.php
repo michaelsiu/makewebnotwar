@@ -12,17 +12,18 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script type="text/javascript" src="//use.typekit.net/hru4gfv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <?php wp_head(); ?>
 </head>
 <body>
   <nav id="mainNav">
     <div id="moreMenu" class="open">
       <div class="row">
-        <div class="large-3 columns test">
+        <div class="large-2 columns test">
           <a href="<?php bloginfo('url'); ?>">
             <img src="<?php bloginfo('template_url'); ?>/images/mwnw-logo.png">
           </a>
         </div>
-        <div class="large-9 columns">
+        <div class="large-10 columns">
           <ul class="large-3 columns">
             <li>
               <h3><a href="<?php bloginfo('url'); ?>/learn">Learn</a></h3>

@@ -18,22 +18,8 @@
       </div>
     </div>
   </footer>
+  <?php wp_footer(); ?>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-    $(document).ready(function(){
-      var x = false;
-      setInterval(function(){
-        if(x){
-          $('.topBanner').css('background-color', '#f78a51');
-          x = false;
-        } else {
-          $('.topBanner').css('background-color', '#442145');
-          x = true;
-        }
-      }, 5000);
-    });
-  </script>
   <script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
 </body>
 </html>

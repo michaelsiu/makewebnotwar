@@ -42,6 +42,22 @@ a {
 strong {
   color: #2e3640; }
 
+.panel.callout, .button {
+  border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+.button.success {
+  background-color: #1ac4a6; }
+
+.button.success:hover {
+  background: #58d68d; }
+
+.mwnw {
+  background-color: #f8955b;
+  padding: 10px; }
+
 #mainNav {
   display: block;
   width: 100%;
@@ -108,7 +124,7 @@ strong {
     #moreMenu li a {
       transition: all 0.3s ease !important; }
     #moreMenu li a:hover {
-      color: #00bd9c; }
+      color: #1ac4a6; }
   #moreMenu input[type="text"] {
     width: 100%; }
 
@@ -117,8 +133,6 @@ strong {
 
 .menuMore {
   background: #eeeeee;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   display: inline-block; }
   .menuMore span {
     margin-left: 10px;
@@ -129,9 +143,7 @@ strong {
     width: 12pt;
     height: 12pt; }
   .menuMore a {
-    color: #333 !important;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    color: #333 !important; }
   .menuMore a:hover {
     background: #eeeeee !important; }
 
@@ -273,7 +285,7 @@ input {
     margin: 0px; }
 
 .circleImage {
-  border: 5px solid #e4e4e4;
+  border: 3px solid #1aa6b4;
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -299,17 +311,12 @@ input {
 
 #community {
   text-align: center; }
-  #community .events h2 a {
-    color: #3d899d; }
-  #community .events h2 a:hover {
-    color: #0065a6; }
 
 #community header {
   background: #fff;
   padding: 100px 0px; }
   #community header h1 {
-    font-size: 4em;
-    color: #0065a6; }
+    font-size: 4em; }
 
 #community .events {
   padding: 100px 0px; }
@@ -415,8 +422,18 @@ h2.month {
     height: auto;
     margin-bottom: 2em; }
 
+#events {
+  padding: 100px 0px; }
+
 #single {
   background: #fdc60b; }
+
+.author {
+  text-align: center; }
+  .author a {
+    color: #1ac4a6; }
+  .author a:hover {
+    color: #58d68d; }
 
 article {
   position: relative;
@@ -428,8 +445,11 @@ article {
   display: inline-block;
   padding-bottom: 50px; }
 
+#tutorial {
+  padding: 100px 0px; }
+
 #learning {
-  padding: 80px 0px; }
+  padding: 100px 0px; }
   #learning h2 a {
     color: #30b0d1; }
 
@@ -450,16 +470,40 @@ article {
 
 #about {
   text-align: center; }
-
-#about header {
-  background: #fff;
-  padding: 100px 0px; }
-  #about header h1 {
-    font-size: 4em; }
-
-#about .contact {
-  padding: 100px 0px;
-  background: #cdf2ff; }
+  #about h2 {
+    text-align: center; }
+  #about .contact {
+    padding: 100px 0px; }
+    #about .contact a {
+      color: #1aa6b4; }
+  #about .team {
+    text-align: center;
+    padding: 100px 0px;
+    background-color: #fff; }
+    #about .team .tmpBadge {
+      text-align: center;
+      margin-bottom: 5em; }
+    #about .team p, #about .team h3, #about .team h4, #about .team h5, #about .team h6 {
+      text-align: left; }
+    #about .team h5 a {
+      color: #1ac4a6; }
+    #about .team h5 a:hover {
+      color: #58d68d; }
+    #about .team ul li {
+      margin: 0px;
+      padding: 0px; }
+      #about .team ul li a {
+        color: #1ac4a6; }
+      #about .team ul li a:hover {
+        color: #58d68d; }
+    #about .team .member {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 4em; }
+  #about header {
+    background: #fff;
+    padding: 100px 0px; }
+    #about header h1 {
+      font-size: 4em; }
 
 footer {
   text-align: center;
@@ -470,12 +514,14 @@ footer {
   width: 100%; }
 
 footer .partners img {
+  vertical-align: bottom;
   padding: 10%;
   width: 100%;
   height: auto; }
 
 footer h3 {
-  color: #eeeeee; }
+  color: #eeeeee;
+  font-size: 1em; }
 
 .copyright {
   font-size: .75em;

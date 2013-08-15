@@ -2,7 +2,7 @@
 <div id="learning">
   <div class="row">
     <div class="large-8 columns">
-      <h1>Learning</h1>
+      <h1>Learn</h1>
       <div class="row">
         <div class="large-12 columns">
           <h2><a href="<?php bloginfo('url'); ?>/tutorials">Tutorials</a></h2>

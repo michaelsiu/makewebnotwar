@@ -6,7 +6,7 @@
     </ul>
 </nav>
 
-<div id="community">
+<div id="events">
 
   <div class="row">
     <div class="large-12 columns">      

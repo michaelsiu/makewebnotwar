@@ -1,15 +1,55 @@
 #about {
   text-align: center;
-}
-#about header {
-  background: #fff;
-  padding: $section_padding;
-  h1 {
-    font-size: 4em;
+  h2 {
+    text-align: center;
   }
-}
+  .contact {
+    padding: $section_padding;
+    a {
+      color: #1aa6b4;
+    }
+  }
+  .team {
+    text-align: center;
+    padding: $section_padding;
+    background-color: #fff;
+    .tmpBadge {
+      text-align: center;
+      margin-bottom: 5em;
+    }
+    p, h3, h4, h5, h6 {
+      text-align: left;
+    }
+    h5 a {
+      color: $green;
+    }
+    h5 a:hover {
+      color:$lightgreen;
+    }
+    ul {
+      li {
+        margin: 0px;
+        padding: 0px;
+        a {
+          color: $green;
+        }
+        a:hover {
+          color: $lightgreen;
+        }
+      }
+    }
+    .member {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 4em;
+    }
+  }
 
-#about .contact {
-  padding: $section_padding;
-  background: #cdf2ff;
+
+  header {
+    background: #fff;
+    padding: $section_padding;
+    h1 {
+      font-size: 4em;
+    }
+  }
 }
