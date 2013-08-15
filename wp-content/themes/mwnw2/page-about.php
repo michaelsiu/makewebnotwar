@@ -18,6 +18,31 @@
       </div>
     </div>
   </header>
+  <section id="latest_news">
+    <div class="row">
+      <div class="large-10 push-1 columns">
+        <h2>Latest News</h2>
+        <?php
+          wp_reset_query();
+          $query = new WP_Query(array('posts_per_page' => 2));
+          if($query->have_posts()):
+            while($query->have_posts()):
+              $query->the_post();
+        ?>
+        <div class="news">
+          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <p>
+              <?php the_date(); ?>
+          </p>
+          <?php the_excerpt(); ?>
+        </div>
+        <?php
+            endwhile;
+          endif;
+        ?>
+      </div>
+    </div>
+  </section>
   <section class="contact">
     <div class="row">
       <div class="large-10 push-1 columns">

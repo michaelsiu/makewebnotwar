@@ -472,6 +472,17 @@ article {
   text-align: center; }
   #about h2 {
     text-align: center; }
+  #about #latest_news {
+    color: #fff;
+    padding: 100px 0px;
+    background-color: #3d899d; }
+    #about #latest_news h1, #about #latest_news h2, #about #latest_news h3, #about #latest_news h4, #about #latest_news h5, #about #latest_news h6 {
+      color: #fff; }
+    #about #latest_news .news {
+      padding: 2em;
+      border-top: 1px solid #0065a6; }
+      #about #latest_news .news a:hover {
+        color: #fff; }
   #about .contact {
     padding: 100px 0px; }
     #about .contact a {

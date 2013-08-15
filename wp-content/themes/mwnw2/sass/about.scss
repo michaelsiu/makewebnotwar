@@ -3,6 +3,21 @@
   h2 {
     text-align: center;
   }
+  #latest_news {
+    color: #fff;
+    padding: $section_padding;
+    background-color: $lightteal;
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+    }
+    .news {
+      padding: 2em;
+      border-top: 1px solid $blue;
+      a:hover {
+        color: #fff;
+      }
+    }
+  }
   .contact {
     padding: $section_padding;
     a {
